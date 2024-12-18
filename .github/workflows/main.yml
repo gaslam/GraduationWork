@@ -16,7 +16,7 @@ jobs:
       - name: Build Unreal Engine 5 Project
         uses: Fork-on-the-Table-Collective/UE5-build-action@v1.0
         with:
-          enginePath: 'C:/Program Files/Epic Games/UE_5.4'
+          enginePath: 'C:/Program Files/Epic Games/UE_5.5'
           uprojectPath: '${{github.workspace}}/GraduationWork.uproject'
           buildConfig: 'Shipping'
           platform: 'Win64'
