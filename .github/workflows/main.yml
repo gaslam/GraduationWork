@@ -18,7 +18,7 @@ jobs:
         with:
           enginePath: 'C:/EpicGames/UE_5.5'
           uprojectPath: 'GraduationWork.uproject'
-          buildConfig: 'Shipping'
+          builConfig: 'Shipping'
           platform: 'Win64'
           clean: 'true'
           cook: 'true'
