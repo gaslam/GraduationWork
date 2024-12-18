@@ -13,13 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build Unreal Engine 5 action
-        uses: Fork-on-the-Table-Collective/UE5-build-action@v1.0
-            
+      - name: Build Unreal Engine 5 Project
+        uses: Fork-on-the-Table-Collective/UE5-build-action@v1
         with:
-          enginePath: 'C:/Program Files/Epic Games/UE_5.5'
-          uprojectPath: '${{github.workspace}}/GraduationWork.uproject'
-          builConfig: 'Shipping'
+          enginePath: 'C:/Program Files/Epic Games/UE_5.4'
+          uprojectPath: 'path/to/your/project.uproject'
+          buildConfig: 'Shipping'
           platform: 'Win64'
           clean: 'true'
           cook: 'true'
@@ -30,13 +29,13 @@ jobs:
           pak: 'false'
           server: 'false'
           archive: 'false'
-          archivePath: ''
+          archivePath: 'path/to/archive'
           nullrhi: 'false'
           editor: 'true'
           encryptIniFiles: 'false'
           release: '1.0.0'
           patch: '1.0.1'
-          maps: 'Map1,Map2'
+          maps: ''
           deletePDB: 'false'
           anticheatEnabled: 'true'
           anticheatPrivateKey: 'base64-private-key'
