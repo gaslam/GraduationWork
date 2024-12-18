@@ -13,10 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build Unreal Engine 5 Project
+      - name: Build Unreal Engine 5 action
         uses: Fork-on-the-Table-Collective/UE5-build-action@v1.0
+            
         with:
-          enginePath: 'C:/Program Files/Epic Games/UE_5.4'
+          enginePath: 'C:/Program Files/Epic Games/UE_5.5'
           uprojectPath: '${{github.workspace}}/GraduationWork.uproject'
           builConfig: 'Shipping'
           platform: 'Win64'
