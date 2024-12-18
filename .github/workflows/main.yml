@@ -17,7 +17,7 @@ jobs:
         uses: Fork-on-the-Table-Collective/UE5-build-action@v1.0
         with:
           enginePath: 'C:/Program Files/Epic Games/UE_5.4'
-          uprojectPath: 'path/to/your/project.uproject'
+          uprojectPath: '${{github.workspace}}GraduationWork.uproject'
           buildConfig: 'Shipping'
           platform: 'Win64'
           clean: 'true'
@@ -28,8 +28,8 @@ jobs:
           package: 'false'
           pak: 'false'
           server: 'false'
-          archive: 'false'
-          archivePath: 'path/to/archive'
+          archive: 'true'
+          archivePath: '${{github.workspace}}/Archive'
           nullrhi: 'false'
           editor: 'true'
           encryptIniFiles: 'false'
