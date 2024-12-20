@@ -8,7 +8,8 @@ public class GraduationWork : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore","XRBase" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "HeadMountedDisplay",
+            "InputDevice","XRBase","OpenXR" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
